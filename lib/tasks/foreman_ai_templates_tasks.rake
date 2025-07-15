@@ -1,7 +1,7 @@
 require 'rake/testtask'
 
 # Tasks
-namespace :foreman_plugin_template do
+namespace :foreman_ai_templates do
   namespace :example do
     desc 'Example Task'
     task task: :environment do
@@ -12,8 +12,8 @@ end
 
 # Tests
 namespace :test do
-  desc 'Test ForemanPluginTemplate'
-  Rake::TestTask.new(:foreman_plugin_template) do |t|
+  desc 'Test ForemanAiTemplates'
+  Rake::TestTask.new(:foreman_ai_templates) do |t|
     test_dir = File.expand_path('../../test', __dir__)
     t.libs << 'test'
     t.libs << test_dir
@@ -23,9 +23,9 @@ namespace :test do
   end
 end
 
-Rake::Task[:test].enhance ['test:foreman_plugin_template']
+Rake::Task[:test].enhance ['test:foreman_ai_templates']
 
 load 'tasks/jenkins.rake'
 if Rake::Task.task_defined?(:'jenkins:unit')
-  Rake::Task['jenkins:unit'].enhance ['test:foreman_plugin_template', 'foreman_plugin_template:rubocop']
+  Rake::Task['jenkins:unit'].enhance ['test:foreman_ai_templates', 'foreman_ai_templates:rubocop']
 end

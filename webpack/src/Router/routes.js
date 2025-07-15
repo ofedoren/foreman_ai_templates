@@ -1,11 +1,11 @@
 import React from 'react';
-import WelcomePage from './WelcomePage';
+import AiTemplatesPage from './AiTemplatesPage';
 
 const routes = [
   {
-    path: '/foreman_plugin_template/welcome',
+    path: '/ai_templates',
     exact: true,
-    render: (props) => <WelcomePage {...props} />,
+    render: (props) => <AiTemplatesPage {...props} />,
   },
 ];
 

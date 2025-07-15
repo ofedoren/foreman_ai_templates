@@ -1,5 +1,5 @@
 {
-  "name": "foreman_plugin_template",
+  "name": "foreman_ai_templates",
   "version": "1.0.0",
   "description": "DESCRIPTION",
   "main": "index.js",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theforeman/foreman_plugin_template.git"
+    "url": "git+https://github.com/theforeman/foreman_ai_templates.git"
   },
   "bugs": {
-    "url": "http://projects.theforeman.org/projects/foreman_plugin_template/issues"
+    "url": "http://projects.theforeman.org/projects/foreman_ai_templates/issues"
   },
   "peerDependencies": {
     "@theforeman/vendor": ">= 6.0.0"
